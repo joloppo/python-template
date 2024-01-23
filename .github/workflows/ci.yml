@@ -27,7 +27,7 @@ jobs:
         run: pip install poetry
 
       - name: Install requirements
-        run: poetry install --no-root --only main
+        run: poetry install
 
       - name: Launch tests & generate report
         run: pytest
