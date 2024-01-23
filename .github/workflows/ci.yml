@@ -30,7 +30,7 @@ jobs:
         run: poetry install
 
       - name: Launch tests & generate report
-        run: poetry run pytest
+        run: poetry run pytest --cov
 
       - name: Coverage comment
         id: coverage_comment
